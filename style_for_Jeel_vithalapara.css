@@ -1,0 +1,450 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: transparent;
+    
+  }
+  
+  a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: transparent;
+    
+  }
+  
+  a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: transparent;
+    
+  }
+  
+  a:active {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #a361bd; 
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a361bd; 
+  }
+  
+
+
+  .mainphoto{
+    
+    will-change: transform;
+    font-family: 'myFirstFont'; 
+    font-size: 90px;
+    width: 100%;
+    height:575px;
+    position: relative;
+    vertical-align: 500px;
+    background-image: linear-gradient(180deg,#a361bd 10%,#111111 10%,#a361bd 20%,#111111 20%,#a361bd 30%,#111111 30%,#a361bd 40%,#111111 40%,
+    #a361bd 50%,#111111 50%,#a361bd 60%,#111111 60%,#a361bd 70%,#111111 70%,#a361bd 80%,#111111 80%,#a361bd 90%,#111111 90%,#a361bd 100%,
+    #111111 80%); 
+    /* color: rgb(0, 0, 0); */
+    padding-top: 200px;
+    padding-left: 125px;
+    will-change: transform;
+    overflow: hidden;
+    object-fit: cover;
+    transition: all 0.55s ease-in;
+  }
+
+  .imageslogo {
+  
+      
+      .mfp-with-anim {
+        opacity: 0;
+        transition: all 0.2s ease-in-out; 
+        transform: scale(0.8); 
+      }
+      .mfp-with-anim {
+        transform: scale(0.8); 
+        opacity: 0;
+      }
+  }
+  
+  .backdiv{
+    cursor: context-menu;
+    background-color: #111111; 
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height:100%;
+    text-align: center;
+   
+  }
+  
+  .gallery-track {
+    
+    animation:myfirstani 3s 4;
+    animation-timing-function: ease-in;
+    animation-direction: alternate-reverse;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    gap: 0.20rem; 
+    padding: 0.20rem;
+    will-change: transform;
+  }
+
+
+
+  .card,.cardwithtext {
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 0;
+    & .card-image-wrapper {
+      height: 150%;
+      will-change: transform;
+  
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  } 
+
+
+  .cardwithtext{
+    text-align: center;
+    z-index: -1;
+    position: relative;
+    font-size:20px;
+    font-family:myFirstFont2;
+    overflow: hidden;
+    
+  } 
+
+
+
+  h1 {
+    display: inline-block;
+    margin: 0;
+    background-image: url('photos/7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+  .GivenText{
+    
+    display: inline-block;
+    margin: 0;
+    background-image: url('photos/24.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+
+  }
+
+
+  .cardcerti {
+    cursor: context-menu;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    & .card-image-wrapper {
+      height: 150%;
+      will-change: transform;
+      transition: all 0.5s ease-in-out;
+      
+      & img {
+        filter: blur(3px);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+
+
+
+  .cardcerti:hover {
+    cursor: context-menu;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    border-radius: 10px;
+    
+
+    & .card-image-wrapper {
+      height: 100%;
+      will-change: transform;
+      transition: all 0.2s ease-in-out;
+      }
+      & img {
+        filter: blur(0px);
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: all 0.2s ease-in-out;
+      }
+      }
+    
+  
+
+
+.conntect-logos
+{
+  user-select: none;
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+  width: fit-content;
+  margin-top: 3%;
+  margin-left: 20%;
+  height: fit-content;
+  display: inline-block;
+  /* transition: background-color 2s ease-out 100ms; */
+  transition: all 0.2s ease-in-out;
+}
+
+.conntect-logos:hover
+{
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; 
+  user-select: none; 
+  filter: drop-shadow(3px 2px #ffffff );
+  height: 25px;
+  width:  25px;
+  display: inline-block;
+}
+
+   
+  
+
+.images{
+  padding-left: 20%; 
+}
+
+.typing-demo {
+  width: 32ch;
+  
+  animation: typing 4s steps(32), blink 0.5s step-end infinite backwards;
+  white-space: nowrap;
+  overflow: hidden;
+  animation-iteration-count:infinite;
+}
+
+
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+      border-color: transparent;
+  }
+}
+
+
+
+
+@font-face {
+    font-family:'myFirstFont';
+    src: url(ostrich-sans-bold.ttf);
+  }
+
+@font-face {
+  font-family:'myFirstFont2';
+  src: url(ostrich-sans.ttf);
+}
+
+ @keyframes myfirstani {
+  0%  {left: 0px; top: 91%;}
+  100%{left: 0px; top: 95%;}
+}
+
+
+@media (width < 800px) {
+ .gallery-track {
+   grid-template-columns: repeat(2,1fr);
+ }
+ .backdiv{
+   background-color: #111111;
+}
+.mainphoto{
+ font-size: 35px;
+ padding-left: 15px;
+}
+.cardcerti {
+ cursor: context-menu;
+ height: fit-content;
+ overflow: hidden;
+ border-radius: 10px;
+ & .card-image-wrapper {
+   height: 150%;
+   will-change: transform;
+   
+   
+   & img {
+     
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+   
+   }
+ }
+}
+
+
+
+.cardcerti:hover {
+ cursor: context-menu;
+ height: 100%;
+ width: 100%;
+ overflow: visible;
+ border-radius: 10px;
+ 
+
+ & .card-image-wrapper {
+   height: 100%;
+   will-change: transform;
+
+   }
+   & img {
+     filter: blur(0px);
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+   
+   }
+   }
+}
+
+@media (width < 550px) {
+
+  .gallery-track {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .backdiv{
+    background-color:#111111;
+  }
+  .mainphoto{
+    font-size: 35px;
+    padding-left: 35px;
+  }
+  .cardcerti {
+    cursor: context-menu;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 10px;
+    & .card-image-wrapper {
+      height: 150%;
+      will-change: transform;
+      
+      
+      & img {
+        
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+      }
+    }
+  }
+
+  
+
+  .cardcerti:hover {
+    cursor: context-menu;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    border-radius: 10px;
+    
+    
+    & .card-image-wrapper {
+      height: 100%;
+      will-change: transform;
+      
+    }
+      & img {
+        filter: blur(0px);
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        
+      }
+    }
+    .mainphoto{
+    
+      will-change: transform;
+      font-family: 'myFirstFont'; 
+      font-size: 180%;
+
+    }
+    .typing-demo {
+      width: 32ch;
+      animation: typing 4s steps(32), blink 0.5s step-end infinite backwards;
+      white-space: nowrap;
+      overflow: hidden;
+      animation-iteration-count:infinite;
+    }
+
+    @keyframes myfirstani {
+      0%  {left: 0px; top: 58%;}
+      100%{left: 0px; top: 64%;}
+    }
+
+    .cardcerti:hover {
+      cursor: context-menu;
+      height: 100%;
+      width: 100%;
+      overflow: visible;
+      border-radius: 10px;
+      
+  
+      & .card-image-wrapper {
+        height: 100%;
+        will-change: transform;
+      
+        }
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+
+        }
+        }
+      
+}
